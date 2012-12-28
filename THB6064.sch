@@ -12361,8 +12361,8 @@ Grid 5.08 mm&lt;p&gt;
 <frame x1="5.08" y1="5.08" x2="116.84" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <text x="73.66" y="127" size="1.27" layer="98">+5V</text>
 <text x="73.66" y="121.92" size="1.27" layer="98">Gnd</text>
-<text x="73.66" y="116.84" size="1.27" layer="98">Dir</text>
-<text x="73.66" y="111.76" size="1.27" layer="98">Step</text>
+<text x="73.66" y="111.76" size="1.27" layer="98">Dir</text>
+<text x="73.66" y="116.84" size="1.27" layer="98">Step</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="154.94" y="101.6"/>
@@ -12901,15 +12901,6 @@ Grid 5.08 mm&lt;p&gt;
 </net>
 <net name="DIR" class="0">
 <segment>
-<pinref part="J1" gate="-3" pin="1"/>
-<wire x1="88.9" y1="116.84" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="116.84" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="STEP"/>
-<wire x1="99.06" y1="111.76" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="STEP" class="0">
-<segment>
 <pinref part="J1" gate="-4" pin="1"/>
 <wire x1="88.9" y1="111.76" x2="96.52" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="111.76" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
@@ -12934,6 +12925,15 @@ Grid 5.08 mm&lt;p&gt;
 <wire x1="76.2" y1="76.2" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
 <junction x="68.58" y="76.2"/>
 <wire x1="76.2" y1="76.2" x2="76.2" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="STEP" class="0">
+<segment>
+<pinref part="J1" gate="-3" pin="1"/>
+<wire x1="88.9" y1="116.84" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="116.84" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="STEP"/>
+<wire x1="99.06" y1="111.76" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
